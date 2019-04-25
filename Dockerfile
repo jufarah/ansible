@@ -7,7 +7,7 @@ RUN apt-get install apache2
 
 RUN pip install ansible==2.7.9
 
-RUN apt-get install -y apache2
+RUN apt-get install --yes apache2
 
 ENTRYPOINT ["ansible-playbook"]
 
