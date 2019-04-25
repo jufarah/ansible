@@ -1,5 +1,5 @@
 
-FROM antidotelabs/utility
+FROM jufarah/jufarah
 
 RUN apt-get update
 
