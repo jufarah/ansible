@@ -5,7 +5,7 @@ RUN apt-get update
 
 RUN apt-get install -y apache2
 
-RUN pip uninstall ansible
+RUN pip uninstall -y ansible
 
 EXPOSE 22
 
