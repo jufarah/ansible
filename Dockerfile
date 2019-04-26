@@ -5,9 +5,9 @@ RUN apt-get update
 
 RUN apt-get install -y apache2
 
-RUN pip install ansible==2.7.9
+RUN pip uninstall ansible
 
-ENTRYPOINT ["ansible-playbook"]
+EXPOSE 22
 
-CMD ["--version"]
+CMD ["/usr/sbin/sshd", "-D"]
 
