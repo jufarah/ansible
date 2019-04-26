@@ -1,5 +1,6 @@
 
 FROM jufarah/jufarah
+FROM Ubuntu
 
 RUN apt-get update
 
