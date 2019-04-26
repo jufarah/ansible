@@ -1,8 +1,10 @@
-
-FROM jufarah/jufarah
 FROM ubuntu
 
+FROM jufarah/jufarah
+
 RUN apt-get update
+
+RUN apt-get install -y pip
 
 RUN apt-get install -y apache2
 
